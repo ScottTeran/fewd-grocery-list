@@ -1,0 +1,55 @@
+/* body {
+	background: url('../images/DeathtoStock_NotStock10.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 100%;
+} */
+
+div {
+	border: 2px solid red;
+}
+
+header {
+	font-size: 3em;
+	text-align: center;
+	margin-top: 0.5em;
+	font-family: 'Indie Flower', cursive;
+	font-weight: 900;
+
+}
+
+header #subtitle {
+	font-size: 0.75em;
+	font-weight: 400;
+}
+
+.main {
+	background: gray;
+	margin-top: 1.5em;
+	height: 20em;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.flex-item:nth-child(1) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 20em;
+    margin: 1em;
+}
+
+.flex-item:nth-child(2) {
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    width: 20em;
+    margin: 1em;
+}
