@@ -7,13 +7,30 @@ $(document).ready(function(){
 		}));
 	});
 
-	$('ul').on('click', 'li', function(event){
-	  // fires when any LIs are clicked on
-	  $("li").hide();
-	  // including LIs that aren't on the page when it is initially loaded
+	// click list item to hide
+
+	$('ul').on('click', 'li', function(event) {
+		$(this).slideUp();
 	});
 
-// notes: use .val(), .prepend(), .append()	 
-
 });
+
+	// EXPERIMENTS (I might get back to these...)
+
+	// $("ul").on("mouseenter", "li", function(event){
+	// 	$(this).addClass("strike-it").add("<span> !</span>");
+	// });
+
+	//$("ul").on("li").mouseenter( function(){
+	//	$(this).addClass("strike-it")}
+	//	.mouseleave
+	//})
+
+	// $(".flex-container").keydown(function(e){
+	// 	if (e.keyCode == 13) {
+	// 		$("#need-list").append($("<li>", { text: $("#need-input").val()
+	// 	}
+	// }); 
+
+
 
