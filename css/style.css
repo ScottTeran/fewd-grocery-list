@@ -21,6 +21,7 @@ h3 {
 
 ul {
     list-style-type: none;
+    text-align: none;
 }
 
 .main {
@@ -29,6 +30,7 @@ ul {
     background: url('../images/DeathtoStock_NotStock10.jpg') center center no-repeat;
     background-size: cover;
     min-height: 100%;
+    border: 1px solid #D9B3AD;
 } 
 
 .flex-container {
@@ -47,8 +49,11 @@ ul {
     align-self: auto;
     width: 20em;
     margin: 1em;
+    text-align: center;
     font-family: 'Indie Flower', cursive;
     background-color: #FFF;
+    box-shadow: inset 0 0 0 1px #707070;
+    opacity: .95;
     opacity: .95;
 }
 
@@ -58,10 +63,54 @@ ul {
     align-self: auto;
     width: 20em;
     margin: 1em;
+    text-align: center;
     font-family: 'Indie Flower', cursive;
     background-color: #FFF;
+    border: solid 1px #c9c9c9;
+    box-shadow: inset 0 0 0 1px #707070;
     opacity: .95;
 }
+
+#need-input, #want-input {
+    width: 10em;
+    padding: 5px;
+    border: none;
+    border-bottom: solid 2px #c9c9c9;
+    transition: border 0.3s;
+
+
+
+  
+}
+
+#btn1, #btn2 {
+/*  this button is from CSSdeck.com  */
+    margin-top: 0.5em;  
+    background: #e3e3e3;
+    border: 1px solid #bbb;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: inset 0 0 1px 1px #f6f6f6;
+    -moz-box-shadow: inset 0 0 1px 1px #f6f6f6;
+    box-shadow: inset 0 0 1px 1px #f6f6f6;
+    color: #333;
+    font: bold 12px 'Indie Flower', cursive;
+    line-height: 1;
+    padding: 8px 0 9px;
+    text-align: center;
+    text-shadow: 0 1px 0 #fff;
+    width: 10em; 
+    height: 31px;
+}
+
+#btn1:hover, #btn2:hover {
+    background: #F5C6C6;
+    -webkit-box-shadow: inset 0 0 1px 1px #eaeaea;
+    -moz-box-shadow: inset 0 0 1px 1px #eaeaea;
+    box-shadow: inset 0 0 1px 1px #eaeaea;
+    color: #222;
+    cursor: pointer; }
 
 .remove-text{
     font-size: 0.8em;
