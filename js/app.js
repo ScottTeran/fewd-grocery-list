@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 	$("#btn1").click(function(){
 		$("#need-list").append($("<li>", { text: $("#need-input").val()
-		}));
+	}));
 		$("#need-input").val("");
 	});
 
@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 	$("#btn2").click(function(){
 		$("#want-list").append($("<li>", { text: $("#want-input").val()
-		}));
+	}));
 		$("#want-input").val("");
 	});
 
