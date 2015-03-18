@@ -1,10 +1,33 @@
 $(document).ready(function(){
 
-	// click button, add to list
+	// "need" button
 
 	$("#btn1").click(function(){
 		$("#need-list").append($("<li>", { text: $("#need-input").val()
 		}));
+		$("#need-input").val("");
+	});
+
+	$("#need-input").on("keydown", function(e) { 
+    if(e.keyCode == 13) {
+        $("#btn1").click();
+        $(this).val("");
+  		}
+	});
+
+	// "want" button
+
+	$("#btn2").click(function(){
+		$("#want-list").append($("<li>", { text: $("#want-input").val()
+		}));
+		$("#want-input").val("");
+	});
+
+	$("#want-input").on("keydown", function(e) { 
+    if(e.keyCode == 13) {
+        $("#btn2").click();
+        $(this).val("");
+  		}
 	});
 
 	// click list item to hide
@@ -14,26 +37,3 @@ $(document).ready(function(){
 	});
 
 });
-
-	// EXPERIMENTS (I might get back to these...)
-
-	// $("ul").on("mouseenter", "li", function(event){
-	// 	$(this).addClass("strike-it").add("<span> !</span>");
-	// });
-
-	//$("ul").on("li").mouseenter( function(){
-	//	$(this).addClass("strike-it")}
-	//	.mouseleave
-	//})
-
-	// $(".flex-container").keydown(function(e){
-	// 	if (e.keyCode == 13) {
-	// 		$("#need-list").append($("<li>", { text: $("#need-input").val()
-	// 	}
-	// }); 
-
-  // $("#need-input").on("keydown", function(e) { 
-  //       if(e.keyCode == 13)
-  //           $("#btn1").click() 
-  //   });
-
